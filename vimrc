@@ -38,6 +38,10 @@ function MyDiff()
     let &shellxquote=l:shxq_sav
   endif
 endfunction
+""Personal settings
+""Current directory automatic change 
+""!!!Be carefull, may cause problems with some plugins. Info from help!!!  
+set autochdir
 ""Ru mapping
 set keymap=russian-jcukenwin
 set iminsert=0
@@ -55,3 +59,10 @@ let g:pymode_rope_complete_on_dot = 0
 set completeopt=menu
 let g:pymode_rope_completion_bind = '<C-Space>'
 let g:pymode_rope_rename_bind = '<C-c>rr'
+""Spelling
+	""https://habr.com/ru/articles/713510/
+	""set spell spelllang=en_us,ru
+""Delete backup file after writing 
+set nobackup
+""No persistence undo
+set noundofile
